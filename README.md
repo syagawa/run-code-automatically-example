@@ -25,5 +25,14 @@ $ sudo cp ~/hello-service /etc/systemd/system/
 ### stop
 `$ systemctl stop hello.service`
 
+### check status
+`$ systemctl status hello.service`
 
+### show logs
+`$ journalctl -u hello -e`
 
+### start hello.service in boot
+`$ systemctl enable hello.service`
+
+### not start hello.service in boot
+`$ systemctl disable hello.service`
