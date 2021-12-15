@@ -1,12 +1,29 @@
 # run code automaticalliy in Linux example
 
 
+## install
+
+```bash
+$ cp ./example-hello-service.py ./hello-service.py
+$ cp ./example-hello.service ./hello.service
+```
+Edit <username> in ./hello.service
+
+```bash
+$ cp ./hello-service.py ~/
+$ chmod a+x ~/hello-service.py
+$ cp ./hello-service ~/
+$ sudo cp ~/hello-service /etc/systemd/system/
+```
+
+
 ## usage
 
-1. cp ./hello-service.py ~/
-2. chmod a+x ~/hello-service.py
-3. cp ./hello-service ~/
-4. sudo cp ~/hello-service /etc/systemd/system/
+### start
+`$ systemctl start hello.service`
+
+### stop
+`$ systemctl stop hello.service`
 
 
 
