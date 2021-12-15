@@ -5,3 +5,6 @@ After=systemd-user-sessions.service
 [Service]
 Type=simple
 ExecStart=/home/<username>/hello-service.py
+
+[Install]
+WantedBy=multi-user.target
